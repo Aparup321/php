@@ -21,11 +21,10 @@ if (is_post()) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Login</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="brand">Aurum Exam Suite</div>
+    <div class="brand">Online Exam System</div>
     <nav class="nav">
       <a href="/views/index.php">Home</a>
       <a href="/views/login.php">Student Login</a>

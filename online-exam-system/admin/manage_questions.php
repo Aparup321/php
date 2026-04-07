@@ -32,11 +32,10 @@ $questions = $pdo->query("SELECT q.*, e.exam_name FROM questions q JOIN exams e 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manage Questions</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="brand">Aurum Exam Suite</div>
+    <div class="brand">Online Exam System</div>
     <nav class="nav">
       <a href="/admin/admin_dashboard.php">Dashboard</a>
       <a href="/admin/manage_exam.php">Exams</a>
