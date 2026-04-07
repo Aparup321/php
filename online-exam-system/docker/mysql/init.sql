@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS results (
 );
 
 INSERT INTO admin (username, password) VALUES
-  ("admin", "$2y$10$K5nq8YOB6rY2jA7xAz9t9OQ2J8e8V0bqGzP1bY7mL0hH2Fy6mI6oS");
+  ("admin", "admin123");
 
 INSERT INTO exams (exam_name, exam_date) VALUES
   ("Sample Exam", NOW());
