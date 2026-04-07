@@ -14,11 +14,10 @@ $exams = $pdo->query("SELECT * FROM exams ORDER BY exam_date DESC")->fetchAll();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Dashboard</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="brand">Aurum Exam Suite</div>
+    <div class="brand">Online Exam System</div>
     <nav class="nav">
       <span>Welcome <?= h($_SESSION["student_name"]) ?></span>
       <a href="/views/result.php">Results</a>

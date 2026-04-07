@@ -51,4 +51,6 @@ INSERT INTO exams (exam_name, exam_date) VALUES
 INSERT INTO questions (exam_id, question, option1, option2, option3, option4, correct_option) VALUES
   (1, "Which data structure uses FIFO order?", "Stack", "Queue", "Tree", "Graph", 2),
   (1, "Which language is primarily used for styling web pages?", "HTML", "CSS", "PHP", "SQL", 2),
-  (1, "What does SQL stand for?", "Structured Query Language", "Simple Query Language", "Sequential Query Logic", "Standard Question Language", 1);
+  (1, "What does SQL stand for?", "Structured Query Language", "Simple Query Language", "Sequential Query Logic", "Standard Question Language", 1),
+  (1, "Which algorithm is commonly used for shortest path in weighted graphs with non-negative edges?", "DFS", "BFS", "Dijkstra", "Prim", 3),
+  (1, "What does HTTP stand for?", "HyperText Transfer Protocol", "High Transfer Text Protocol", "Hyperlink Transfer Program", "Host Transfer Packet", 1);

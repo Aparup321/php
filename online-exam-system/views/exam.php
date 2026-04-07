@@ -46,12 +46,11 @@ if (is_post()) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exam</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="brand">Aurum Exam Suite</div>
+    <div class="brand">Online Exam System</div>
     <nav class="nav">
       <span class="timer" data-timer="600">10:00</span>
       <a href="/views/dashboard.php">Dashboard</a>
