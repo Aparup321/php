@@ -1,0 +1,25 @@
+services:
+  web:
+    build: .
+    container_name: online_exam_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    depends_on:
+      - db
+  db:
+    image: mysql:8.0
+    container_name: online_exam_db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: online_exam
+      MYSQL_USER: exam_user
+      MYSQL_PASSWORD: exam_pass
+      MYSQL_ROOT_PASSWORD: root_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
