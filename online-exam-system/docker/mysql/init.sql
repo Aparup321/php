@@ -43,7 +43,8 @@ CREATE TABLE IF NOT EXISTS results (
 );
 
 INSERT INTO admin (username, password) VALUES
-  ("admin", "admin123");
+  ("admin", "admin123")
+  ("aparup","12345");
 
 INSERT INTO exams (exam_name, exam_date) VALUES
   ("Sample Exam", NOW());
@@ -53,4 +54,5 @@ INSERT INTO questions (exam_id, question, option1, option2, option3, option4, co
   (1, "Which language is primarily used for styling web pages?", "HTML", "CSS", "PHP", "SQL", 2),
   (1, "What does SQL stand for?", "Structured Query Language", "Simple Query Language", "Sequential Query Logic", "Standard Question Language", 1),
   (1, "Which algorithm is commonly used for shortest path in weighted graphs with non-negative edges?", "DFS", "BFS", "Dijkstra", "Prim", 3),
-  (1, "What does HTTP stand for?", "HyperText Transfer Protocol", "High Transfer Text Protocol", "Hyperlink Transfer Program", "Host Transfer Packet", 1);
+  (1, "What does HTTP stand for?", "HyperText Transfer Protocol", "High Transfer Text Protocol", "Hyperlink Transfer Program", "Host Transfer Packet", 1)
+  (1, "Who is our pm? ","Modi","Jai sah","Didi","Balen",1);
