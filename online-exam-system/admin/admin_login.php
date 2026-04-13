@@ -7,11 +7,14 @@ $error = "";
 if (is_post()) {
     $username = trim($_POST["username"] ?? "");
     $password = $_POST["password"] ?? "";
+    error_log("Admin login attempt for username: " . $username);
     if (login_admin($username, $password)) {
+        error_log("Admin login redirected to dashboard for: " . $username);
         header("Location: /admin/admin_dashboard.php");
         exit;
     }
     $error = "Invalid credentials.";
+    error_log("Admin login error displayed: " . $error);
 }
 ?>
 <!DOCTYPE html>
