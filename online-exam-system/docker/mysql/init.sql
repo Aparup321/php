@@ -43,8 +43,8 @@ CREATE TABLE IF NOT EXISTS results (
 );
 
 INSERT INTO admin (username, password) VALUES
-  ("admin", "admin123"),
-  ("aparup","12345");
+  ("admin", "$2y$10$1Lp87Qas9tg7rGa.OSqvEe5pk38H1f01rDh47QuKge1cEtgMlx6ou"),
+  ("aparup","$2y$10$7RDdE3hX3sB4rEJEVwnsku2qKVAqVRFYR/f3owb8yLi60V4raL2NS");
 
 INSERT INTO exams (exam_name, exam_date) VALUES
   ("Sample Exam", NOW());
